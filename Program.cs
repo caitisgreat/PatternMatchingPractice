@@ -10,7 +10,7 @@ namespace PatternMatchingPractice
       this.patternLength = patternLength;
 
     }
-    protected bool debug = true;
+    protected bool debug = false;
     protected string input { get; set; }
     protected int patternLength { get; set; }
     protected Node root { get; set; }
@@ -109,9 +109,9 @@ namespace PatternMatchingPractice
 
       if (node.isEndOfWord) {
         string output = new string(sb);
-        // if (node.occurrences > 1) {
+        if (node.occurrences > 1) {
           System.Console.WriteLine("{0}, occurs {1} time(s)", output, node.occurrences);
-        // }
+        }
       }
     }
   }

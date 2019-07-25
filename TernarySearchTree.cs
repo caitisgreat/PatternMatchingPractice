@@ -4,7 +4,7 @@ using System.Text;
 namespace PatternMatchingPractice
 {
   public class TernarySearchTree {
-	  protected bool debug = false;
+    protected bool debug = false;
     protected string input { get; set; }
     protected int patternLength { get; set; }
     protected Node root { get; set; }

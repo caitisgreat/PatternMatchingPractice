@@ -4,11 +4,10 @@ namespace PatternMatchingPractice {
   /// a node within the ternary tree structure
   /// </summary>
   public class Node {
-    public Node (char data, int depth = 0) {
+    public Node (char data) {
       this.data = data;
       this.isEndOfWord = false;
       this.occurrences = 0;
-      this.depth = depth;
     }
     /// <summary>
     ///  a character within the input string
@@ -21,20 +20,15 @@ namespace PatternMatchingPractice {
     /// <value></value>
     public bool isEndOfWord { get; set; }
     /// <summary>
-    ///  the word as it's formed so far
+    ///  the word, set when isEndOfWord = true
     /// </summary>
     /// <value></value>
-    public string word { get; set; }
+    public char[] word { get; set; }
     /// <summary>
     ///  current number of occurrences of this word
     /// </summary>
     /// <value></value>
     public int occurrences { get; set; }
-    /// <summary>
-    ///  the depth the character exists at within the word
-    /// </summary>
-    /// <value></value>
-    public int depth { get; set; }
     /// <summary>
     ///  "less than" neighbors within the ternary search tree
     /// </summary>

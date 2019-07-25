@@ -35,5 +35,3 @@ I chose to implement a ternary search tree.
 This maintains the basic structure of a prefix trie, but allows for some flexibility on space by acting somewhat like a binary search tree.  Additionally, traversing tries is pretty fast.
 I chose not to implement a search function because it wasn't required within the scope of the problem statement, but it wouldn't be hard to do at this point.
 An alternative solution might be to use regular expressions to capture groups of pattern length for any type of characters.
-
-*/
